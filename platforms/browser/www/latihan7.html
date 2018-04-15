@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>latihan 7</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="template/css/blog-post.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="template/vendor/jquery/jquery.min.js"></script>
+    <script src="template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+#paragraf {
+   width:600px;
+   height:80px;
+   background-color:pink;
+   line-height:80px;
+   text-align:center;
+   font-size:30px;
+}
+</style>
+
+
+<script>
+   $( document ).ready(function() {
+  
+     $( "#paragraf" ).click(function() {    
+       $( "#paragraf" ).css( "color", "green" );
+     });
+  
+     $( "#paragraf" ).mouseover(function() {    
+       $( "#paragraf" ).css( "background-color", "silver" );
+     });
+  
+     $( "#paragraf" ).mouseout(function() {    
+       $( "#paragraf" ).css( "background-color", "pink" );
+     });
+  
+     $( "#paragraf" ).dblclick(function() {    
+       $( "#paragraf" ).css( "border", "solid 2px black" );
+     });
+  
+   });
+   </script>
+</head>
+
+
+
+
+
+
+  </head>
+
+  <body>
+
+
+<h1>Halo... saya latihan ke-7</h1>
+
+
+<p id="paragraf">
+   Belajar jQuery Event 
+</p>
+
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="phonegap-plugin-battery-status" version="1.0.0">
+  <name>Battery</name>
+  <description>PhoneGap Battery Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,battery</keywords>
+  <repo>https://github.com/phonegap/phonegap-plugin-battery-status.git</repo>
+  <issue>https://github.com/phonegap/phonegap-plugin-battery-status/issues</issue>
+  <dependency id="es6-promise-plugin"/>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Battery">
+        <param name="ios-package" value="CDVBattery"/>
+      </feature>
+    </config-file>
+    <js-module src="www/battery.js" name="battery">
+      <clobbers target="navigator.getBattery"/>
+    </js-module>
+    <header-file src="src/ios/CDVBattery.h"/>
+    <source-file src="src/ios/CDVBattery.m"/>
+  </platform>
+</plugin>

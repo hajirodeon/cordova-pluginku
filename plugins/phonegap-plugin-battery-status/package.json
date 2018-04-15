@@ -1,0 +1,41 @@
+{
+  "name": "phonegap-plugin-battery-status",
+  "version": "1.0.0",
+  "description": "Phonegap Battery Plugin",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "phonegap-plugin-battery-status",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phonegap/phonegap-plugin-battery-status"
+  },
+  "keywords": [
+    "cordova",
+    "battery",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests"
+  },
+  "author": "The Phonegap Team",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0",
+    "pluginpub": "0.0.8"
+  }
+}

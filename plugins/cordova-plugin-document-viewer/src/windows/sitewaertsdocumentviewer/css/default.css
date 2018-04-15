@@ -1,0 +1,190 @@
+﻿html {
+    touch-action: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.title.win-h3 {
+    line-height: 48px;
+}
+
+#viewer_view,
+.view-controller {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#viewer_view > .loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.win-toolbar.head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.win-toolbar.head .win-command.title{
+    position: absolute;
+    left: 0;
+}
+
+.win-toolbar.head .win-toolbar-overflowbutton{
+    display: none;
+}
+
+
+.view-controller {
+    /*reserve space for head button bar*/
+    height: calc(100% - 50px);
+    margin-top: 50px;
+}
+
+.view-controller .win-listview,
+.view-controller .win-listview .win-item {
+    height: 100%;
+}
+
+.view-controller.pageflow > .win-listview > .win-viewport > .win-headercontainer,
+.view-controller.pageflow > .win-listview > .win-viewport > .win-footercontainer{
+    /* avoid vertical scrollbar */
+    display: none;
+}
+
+.view-controller.pageflow > .win-listview > .win-viewport {
+    /*-ms-content-zooming: zoom;*/
+}
+
+.win-listview > .win-viewport.win-horizontal {
+    /* native scrolling by mouse wheel */
+    -ms-scroll-translation: vertical-to-horizontal;
+}
+
+.view-controller.tiles > .win-listview > .win-viewport.win-horizontal{
+    /* needed for native scroll/pan */
+    touch-action: pan-x;
+}
+
+.view-controller.pageflow > .win-listview > .win-viewport.win-horizontal {
+
+    /* needed for native pinch-and-zoom */
+    overflow-y: auto;
+    touch-action: pan-x pan-y pinch-zoom;
+
+    -ms-content-zooming: zoom;
+    -ms-content-zoom-limit-min: 100%;
+    -ms-content-zoom-limit-max: 300%;
+    -ms-content-zoom-snap-points: snapList(100%, 150%, 200%, 300%);
+    -ms-content-zoom-snap-type: mandatory;
+}
+
+.view-controller.pageflow > .win-listview > .win-viewport > .win-gridlayout {
+    /* native scrolling (panning) */
+    /*touch-action: pan-x pan-y;*/
+    /* native scrolling (panning), pinch and zoom */
+    /*touch-action: pan-x pan-y pinch-zoom double-tap-zoom;*/
+}
+
+
+.view-controller.pageflow .overlay_nav{
+    display: none;
+}
+
+.view-controller.pageflow .overlay_nav button{
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.view-controller.pageflow .overlay_nav button:hover {
+    background-color: rgba(0,0,0, 0.7) !important;
+}
+
+
+.pointer-active .view-controller.pageflow .overlay_nav.scroll{
+    display: block;
+}
+
+.view-controller.pageflow .overlay_nav.scroll button{
+    position: absolute;
+    top: 50%;
+}
+
+.view-controller.pageflow .overlay_nav.scroll button.prev {
+    left: 0;
+}
+
+.view-controller.pageflow .overlay_nav.scroll button.next {
+    right: 0;
+}
+
+
+
+.mouse-active .view-controller.pageflow .overlay_nav.zoom{
+    display: block;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+
+
+.pdf_page {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    position: relative;
+}
+
+.pdf_page > .loading {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.pdf_page > .loading .page_index {
+    margin: 1em;
+}
+
+.view-controller.outline {
+    overflow-x: auto;
+}
+
+.view-controller.outline li {
+    margin-top: .6em;
+    list-style-type: none;
+}
+
+/*first level*/
+.view-controller.outline > ul > li {
+    margin-top: 1.2em;
+}
+
+.view-controller.outline .item {
+    position: relative;
+    border-bottom: 1px dotted gray;
+}
+
+.view-controller.outline .item .page-index {
+    position: absolute;
+    right: 2em;
+}
+
+.has-no-outline .win-command.view.outline,
+.has-one-page .win-command.view,
+.has-one-page hr.win-command {
+    display: none;
+}

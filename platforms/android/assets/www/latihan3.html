@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>latihan3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="template/css/blog-post.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="template/vendor/jquery/jquery.min.js"></script>
+    <script src="template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+	<script>
+   $( document ).ready(function() {
+     $("#tombol").click(function() {    
+       $("p").css( "color", "red" );
+       $("#belajar").css( "color", "green" );
+       $(".warna").css( "color", "blue" );
+       $("#test.saja").css( "color", "yellow" );
+       $("div p.warna").css( "color", "pink" );
+     });
+   });
+   </script>
+
+
+
+
+  </head>
+
+  <body>
+
+
+<h1>Halo... saya latihan ketiga</h1>
+
+
+
+<p>
+   Sebuah paragraf tanpa atribut apapun
+</p>
+<p id="belajar">
+   Sebuah paragraf dengan id = "belajar"
+</p>
+<p class="warna">
+   Sebuah paragraf dengan class = "warna"
+</p>
+<p id="test" class="saja">
+   Sebuah paragraf dengan id="test" class="saja"
+</p>
+<div>
+   <p class="warna">
+     Sebuah paragraf tanpa atribut apapun
+   </p>
+</div>
+<button id="tombol">Action</button>
+
+
+
+
+  </body>
+
+</html>

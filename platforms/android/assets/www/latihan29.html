@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>latihan 29</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="template/css/blog-post.css" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="template/vendor/jquery/jquery.min.js"></script>
+    <script src="template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+   $(document).ready(function() {
+  
+     $("#kurangi_lebar").click(function() {
+       var lebar_box = $("#box").width();
+       $("#box").width(lebar_box - 10);
+    })
+  
+     $("#kurangi_tinggi").click(function() {
+       var tinggi_box = $("#box").height();
+       $("#box").height(tinggi_box - 10);
+     })
+  
+     $("#tambah_lebar").click(function() {
+       var lebar_box = $("#box").width();
+       $("#box").width(lebar_box + 10);
+     })
+  
+     $("#tambah_tinggi").click(function() {
+       var tinggi_box = $("#box").height();
+       $("#box").height(tinggi_box + 10);
+     })
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 300px;
+     height: 80px;
+     background-color: pink;
+     border: 2px solid black;
+   }
+   </style>
+
+
+
+
+</head>
+
+
+
+
+</head>
+
+
+
+  <body>
+
+
+<h1>Halo... saya latihan ke-29</h1>
+
+
+
+<button id="kurangi_lebar">Kurangi Lebar</button>
+<button id="kurangi_tinggi">Kurangi Tinggi</button>
+<button id="tambah_lebar">Tambah Lebar</button>
+<button id="tambah_tinggi">Tambah Tinggi</button>
+<br><br>
+<div id="box"></div>
+
+
+
+
+  </body>
+
+</html>
+
