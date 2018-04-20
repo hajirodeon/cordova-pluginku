@@ -22,12 +22,6 @@
         "cordova-plugin-tts": {
             "PACKAGE_NAME": "com.myqueue.myqueue"
         },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "io.pluginku.pluginku"
-        },
-        "com.phonegap.plugins.PushPlugin": {
-            "PACKAGE_NAME": "io.pluginku.pluginku"
-        },
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "io.pluginku.pluginku"
         },
@@ -41,6 +35,9 @@
             "PACKAGE_NAME": "io.pluginku.pluginku"
         },
         "cordova-plugin-printer": {
+            "PACKAGE_NAME": "io.pluginku.pluginku"
+        },
+        "phonegap-plugin-local-notification": {
             "PACKAGE_NAME": "io.pluginku.pluginku"
         }
     },

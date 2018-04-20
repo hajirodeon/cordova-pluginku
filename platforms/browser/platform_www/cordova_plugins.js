@@ -246,30 +246,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-        "id": "cordova-plugin-dialogs.notification",
-        "pluginId": "cordova-plugin-dialogs",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-dialogs/www/browser/notification.js",
-        "id": "cordova-plugin-dialogs.notification_browser",
-        "pluginId": "cordova-plugin-dialogs",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
-        "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
-        "id": "com.phonegap.plugins.PushPlugin.PushNotification",
-        "pluginId": "com.phonegap.plugins.PushPlugin",
-        "clobbers": [
-            "PushNotification"
-        ]
-    },
-    {
         "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
         "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
         "pluginId": "phonegap-plugin-barcodescanner",
@@ -307,6 +283,14 @@ module.exports = [
             "plugin.printer",
             "cordova.plugins.printer"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-local-notification/www/notification.js",
+        "id": "phonegap-plugin-local-notification.Notification",
+        "pluginId": "phonegap-plugin-local-notification",
+        "clobbers": [
+            "Notification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -319,13 +303,12 @@ module.exports.metadata =
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-tts": "0.2.3",
-    "cordova-plugin-dialogs": "2.0.1",
-    "com.phonegap.plugins.PushPlugin": "2.5.0",
     "phonegap-plugin-barcodescanner": "6.0.8",
     "cordova-sqlite-storage": "2.3.0",
     "nl.x-services.plugins.backgroundaudio": "1.0.1",
     "cordova-plugin-file-opener2": "2.0.19",
-    "cordova-plugin-printer": "0.7.3"
+    "cordova-plugin-printer": "0.7.3",
+    "phonegap-plugin-local-notification": "1.0.1"
 }
 // BOTTOM OF METADATA
 });

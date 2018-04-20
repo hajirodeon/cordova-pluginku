@@ -252,6 +252,7 @@ dependencies {
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.android.support:support-v4:+"
+    compile "com.android.support:support-v13:23+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
