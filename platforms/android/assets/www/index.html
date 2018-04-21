@@ -1,81 +1,29 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Latihan Jquery</title>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Daftar Pluginku</title>
 
 
 
-    <!-- Bootstrap core CSS -->
-    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="template/css/blog-post.css" rel="stylesheet">
+<body>
 
+<h1>Daftar Pluginku</h1>
 
+<ul>
+<li><a href="notifikasi.html">notifikasi</a></i>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="template/vendor/jquery/jquery.min.js"></script>
-    <script src="template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+</ul>
 
 
-    <script src="cordova.js"></script>
-    <script src="notification.js"></script>
+</body>
 
-
-<script>
-  
-$(document).ready(function(){
-
-document.addEventListener('deviceready', function () {
-
-if (“Notification” in window) {
-  Notification.requestPermission(function (permission) {
-    // If the user accepts, let’s create a notification
-    if (permission === ‘granted’) {
-      var notification = new Notification(“My title”, {
-           tag: ‘message1’, 
-           body: “My body” 
-      }); 
-      notification.onshow  = function() { console.log(‘show’); };
-      notification.onclose = function() { console.log(‘close’); };
-      notification.onclick = function() { console.log(‘click’); };
-    }
-  });
-}
-
-
-
-
-
-
-
-});
-
-});
-
-</script>
-
-
-
-
-
-
-    </head>
-    <body>
-
-
-	<h1>
-		COBA NOTIFIKASI
-	</h1>
-
-
-
-    </body>
 </html>

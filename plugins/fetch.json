@@ -47,6 +47,14 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-plugin-dialogs": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-dialogs@~1.3.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
   "cordova-plugin-geolocation": {
     "source": {
       "type": "registry",
@@ -87,18 +95,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-whitelist": {
+  "cordova-plugin-local-notification": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-whitelist@1"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-tts": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-tts@^0.2.3"
+      "id": "cordova-plugin-local-notification"
     },
     "is_top_level": true,
     "variables": {}
@@ -109,73 +109,6 @@
       "id": "cordova-plugin-badge@>=0.8.5"
     },
     "is_top_level": false,
-    "variables": {}
-  },
-  "phonegap-plugin-barcodescanner": {
-    "source": {
-      "type": "registry",
-      "id": "phonegap-plugin-barcodescanner@6.0.8"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-sqlite-storage": {
-    "source": {
-      "type": "git",
-      "url": "https://github.com/litehelpers/Cordova-sqlite-storage",
-      "subdir": "."
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "nl.x-services.plugins.backgroundaudio": {
-    "source": {
-      "type": "git",
-      "url": "https://github.com/EddyVerbruggen/cordova-plugin-backgroundaudio",
-      "subdir": "."
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-file-opener2": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-file-opener2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-printer": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-printer"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "com.darktalker.cordova.screenshot": {
-    "source": {
-      "type": "git",
-      "url": "https://github.com/gitawego/cordova-screenshot.git",
-      "subdir": "."
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "phonegap-plugin-local-notification": {
-    "source": {
-      "type": "registry",
-      "id": "phonegap-plugin-local-notification"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-local-notification": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-local-notification"
-    },
-    "is_top_level": true,
     "variables": {}
   }
 }

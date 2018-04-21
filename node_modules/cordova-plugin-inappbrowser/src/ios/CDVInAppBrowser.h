@@ -49,11 +49,7 @@
 @property (nonatomic, assign) BOOL location;
 @property (nonatomic, assign) BOOL toolbar;
 @property (nonatomic, copy) NSString* closebuttoncaption;
-@property (nonatomic, copy) NSString* closebuttoncolor;
 @property (nonatomic, copy) NSString* toolbarposition;
-@property (nonatomic, copy) NSString* toolbarcolor;
-@property (nonatomic, assign) BOOL toolbartranslucent;
-@property (nonatomic, assign) BOOL hidenavigationbuttons;
 @property (nonatomic, assign) BOOL clearcache;
 @property (nonatomic, assign) BOOL clearsessioncache;
 
@@ -78,13 +74,13 @@
     NSString* _prevUserAgent;
     NSInteger _userAgentLockToken;
     CDVInAppBrowserOptions *_browserOptions;
-
+    
 #ifdef __CORDOVA_4_0_0
     CDVUIWebViewDelegate* _webViewDelegate;
 #else
     CDVWebViewDelegate* _webViewDelegate;
 #endif
-
+    
 }
 
 @property (nonatomic, strong) IBOutlet UIWebView* webView;
@@ -103,7 +99,7 @@
 - (void)navigateTo:(NSURL*)url;
 - (void)showLocationBar:(BOOL)show;
 - (void)showToolBar:(BOOL)show : (NSString *) toolbarPosition;
-- (void)setCloseButtonTitle:(NSString*)title : (NSString*) colorString;
+- (void)setCloseButtonTitle:(NSString*)title;
 
 - (id)initWithUserAgent:(NSString*)userAgent prevUserAgent:(NSString*)prevUserAgent browserOptions: (CDVInAppBrowserOptions*) browserOptions;
 
@@ -114,3 +110,4 @@
 @property (nonatomic, weak) id <CDVScreenOrientationDelegate> orientationDelegate;
 
 @end
+

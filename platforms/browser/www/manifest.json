@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "pluginku",
+  "short_name": "pluginku",
+  "version": "pluginku.pluginku.pluginku",
+  "description": "pluginku",
+  "author": "PhoneGap Team",
+  "icons": [],
+  "start_url": "index.html"
+}
