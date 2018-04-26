@@ -9,9 +9,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <provider android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
-        </provider>
         <provider android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true" android:name="de.appplant.cordova.plugin.notification.util.AssetProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/localnotification_provider_paths" />
         </provider>
